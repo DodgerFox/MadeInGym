@@ -1,0 +1,143 @@
+.contacts
+    // background-image url('../images/contacts-bg-2.png')
+    // background-size 200%
+    // background-repeat no-repeat
+    // background-position bottom center
+    // display flex
+    // justify-content center
+    overflow hidden
+    margin-top -650px
+    position relative
+    padding-top 720px
+    padding-top 600px
+    margin-top -650px
+    padding-bottom 270px
+    padding-bottom 470px
+    z-index 6
+    +to-width(1400px)
+      background-size 300%
+    +to-width(1200px)
+      padding-bottom 200px
+
+    &-container
+      background-color #191919
+      background-image url('../images/contacts-line.png')
+      background-repeat no-repeat
+      background-position center 15%!important
+      position absolute
+      left 50%
+      transform translateX(-50%)
+      top 0
+      right 0
+      bottom 0
+
+
+    &:before
+      content ''
+      top 300px
+      left 0
+      right 0
+      min-height 1100px
+      position absolute
+      background-color #191919
+
+    .words-point
+      top 250px
+      bottom -400px
+
+    &__title
+        text-align center
+        color #ffffff
+        padding-bottom 100px
+        +to-width(640px)
+          padding-bottom 40px
+
+    &-body
+        display flex
+        justify-content space-between
+        color #ffffff
+        +to-width(640px)
+          flex-direction column
+
+    &-info
+        display flex
+        flex-wrap wrap
+
+        &-item
+            width 50%
+            padding-bottom 40px
+            +to-width(640px)
+              width 100%
+
+            &__title
+                font-family Road
+                font-size 18px
+                font-weight 400
+                line-height 24px
+                padding-bottom 15px
+
+            &__text
+                font-family October
+                font-size 18px
+                font-weight 400
+                line-height 24px
+                color #ffffff
+
+            a
+              t()
+              &:hover
+                color #d0191a
+
+    &-social
+        font-size 16px
+        font-weight 300
+        font-family Road
+        padding-right 220px
+        display flex
+        flex-direction column
+        +to-width(850px)
+          padding-right 0
+        +to-width(640px)
+          flex-direction row
+          justify-content space-between
+        &__item
+            margin-top 15px
+            color #fefefe
+            position relative
+            &:first-child
+                margin-top 0
+            +to-width(640px)
+              margin 15px 0
+              &:first-child
+                margin-top 15px
+            &:after
+                content ''
+                border 5px solid transparent
+                border-left 8px solid rgba(255, 255, 255, 1)
+                display none
+                width 0
+                height 0
+                position absolute
+                left -18px
+                top 4px
+            &:hover
+                color white
+                font-weight 700
+                &:after
+                    display block
+
+    &-map
+        background-color #6b6969
+        width 100%
+        height 540px
+        margin-top 5px
+        +to-width(640px)
+          height 400px
+          margin-left -20px
+          margin-right -20px
+          width auto
+
+    .welcome-start
+        margin-top 250px
+        +to-width(850px)
+          margin-top 120px

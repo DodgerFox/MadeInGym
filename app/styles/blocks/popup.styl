@@ -1,0 +1,158 @@
+.popup
+  position fixed
+  left 0
+  top 0
+  right 0
+  bottom 0
+  background-color white
+  z-index 30
+  min-height 750px
+  +to-width(500px)
+    min-height 670px
+  +to-width(500px)
+    min-height 670px
+  +to-width(400px)
+    min-height 550px
+  &-wrap
+    display flex
+    justify-content center
+    align-items center
+    height 100%
+    +to-width(370px)
+      padding 0
+
+  &-close
+    position absolute
+    right 75px
+    top 120px
+    transition 0.3s all
+    cursor pointer
+    &:hover
+      opacity 0.65
+    +to-width(750px)
+      top 140px
+    +to-width(500px)
+      right 50px
+      top 200px
+    +to-width(350px)
+      top 240px
+
+  &-form
+    position relative
+    display flex
+    flex-direction column
+    align-items center
+    justify-content center
+    padding 20px
+    padding-top 80px
+    width 100%
+    max-width 746px
+    min-height 832px
+    background-image url('../images/svg/popup.svg')
+    background-position center
+    background-size contain
+    background-repeat no-repeat
+    +to-width(750px)
+      background-image url('../images/svg/popup-mobile.svg')
+      min-height 835px
+      max-width 465px
+    +to-width(370px)
+      padding-top 100px
+
+
+  &__title
+    font-family Road
+    font-size 36px
+    font-weight 700
+    color #ffffff
+    padding-bottom 10px
+    +to-width(750px)
+      font-size 34px
+    +to-width(500px)
+      font-size 24px
+    +to-width(370px)
+      padding-bottom 0
+      font-size 22px
+
+  &-input
+    max-width 332px
+    width 100%
+    margin-top 28px
+    height 44px
+    padding 0 21px
+    background transparent
+    border 1px solid #ffffff
+    color #ffffff
+    font-family October
+    font-size 16px
+    font-weight 300
+    +placeholder()
+      color white
+    +to-width(750px)
+      max-width 300px
+    +to-width(500px)
+      max-width 200px
+      height 30px
+      margin-top 10px
+      font-size 14px
+      padding 0 10px
+
+
+  &-button
+    max-width 332px
+    width 100%
+    margin-top 28px
+    height 44px
+    padding 0 21px
+    background white
+    border 1px solid #ffffff
+    color #000000
+    font-family Road
+    font-size 16px
+    font-weight 700
+    transition 0.3s all
+    +placeholder()
+      color white
+    +to-width(750px)
+      max-width 300px
+    +to-width(500px)
+      margin-top 10px
+      max-width 200px
+      font-size 14px
+    &:hover
+      background transparent
+      color white
+    &:active
+      border 4px solid white
+
+  &-text
+    color #ffffff
+    margin-top 18px
+    font-family October
+    font-size 11px
+    line-height 14px
+    text-align center
+    font-weight 300
+    max-width 363px
+    +to-width(750px)
+      max-width 340px
+    +to-width(500px)
+      max-width 220px
+
+
+@media screen and (max-height: 850px){
+  .popup-form{
+    max-width: 640px;
+    min-height: 757px;
+    padding-top: 80px;
+  }
+}
+
+@media screen and (max-height: 850px) and (max-width: 750px){
+  .popup-form{
+    max-width: 465px;
+  }
+  .popup-close{
+    top: 140px;
+  }
+}

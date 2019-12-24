@@ -1,0 +1,74 @@
+section.statistic#statistic
+  .section-container.statistic-container
+    .words-point(data-midnight="white")
+  .wrap.statistic-wrap
+    .statistic-image__wrap
+        img(src="assets/images/statistic-image.png").statistic-image
+  .wrap.statistic__wrap
+    .statistic-body
+      .statistic-left
+          .statistic-item
+            h3.statistic-item__title 200
+            p.statistic-item__text шкафов с электронными замками
+          .statistic-item
+            h3.statistic-item__title 50
+            p.statistic-item__text тренажеров Life fitness и Hammer Strength
+          .statistic-item
+            h3.statistic-item__title 1000<span>м<sup>2</sup></span>
+            p.statistic-item__text площадь клуба
+      .statistic-right
+          .statistic-item
+            h3.statistic-item__title 8
+            p.statistic-item__text закрытых душевых
+          .statistic-item
+            h3.statistic-item__title 4
+            p.statistic-item__text залов для разноплановых занятий
+          .statistic-item
+            h3.statistic-item__title 2
+            p.statistic-item__text ультрасовременных солярия MegaSun 
+      
+    .more
+      h5.more__title Что еще?
+      .more-body
+        .more-item
+          .more-item__number 01
+          .more-item__text Доступ в клуб с инновационной системой Face ID
+        .more-item
+          .more-item__number 02
+          .more-item__text Доступ в клуб с инновационной системой Face ID
+        .more-item
+          .more-item__number 03
+          .more-item__text Доступ в клуб с инновационной системой Face ID
+    
+    form.statistic-form
+      input(type="text" placeholder="Имя").statistic-form__input
+      input(type="tel" placeholder="+7 (___) ___-__-__").statistic-form__input
+      select.statistic-form__select
+        option Тип клубной карты
+        option Дневная
+        option Семейная
+        option Детская
+      .statistic-form__wrap
+        .statistic-form-agreement
+          .statistic-form-checkbox
+            - var d = 16;
+            input(type="checkbox", id="check")
+            label(for="check", style='--d: '+d+'px')
+              svg(viewBox=[0, 0, 50, 50].join( ))
+                path(d="M5 30 L 20 45 L 45 5")
+          .statistic-form__text Я ознакомился c 
+            a(href="#") пользовательским соглашением
+        button.statistic-form__button Получить карту
+      
+    
+    a(href="#halls" data-offset="0").welcome-start
+      .welcome-start-lines
+        .welcome-start-lines__item
+          .welcome-start-lines__line
+          .welcome-start-lines__line
+        .welcome-start-lines__item
+          .welcome-start-lines__line
+          .welcome-start-lines__line
+        .welcome-start-lines__item
+          .welcome-start-lines__line
+          .welcome-start-lines__line

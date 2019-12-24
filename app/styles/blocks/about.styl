@@ -1,0 +1,177 @@
+.about
+    background-position bottom center
+    overflow: hidden;
+    display flex
+    justify-content center
+    // background-image url('../images/about-bg-2.png')
+    background-size 200%
+    background-repeat no-repeat
+    margin-top -450px
+    padding-top 140px
+    padding-bottom 120px
+    position relative
+    z-index 18
+    +to-width(1800px)
+      padding-bottom 120px
+    +to-width(1400px)
+      padding-bottom 140px
+    +to-width(1200px)
+      padding-bottom 160px
+    +to-width(850px)
+      padding-top 200px
+      padding-bottom 300px
+    +to-width(600px)
+      background-size cover
+
+    &-container
+      background-color white
+      background-image url('../images/about-bg.png')
+      background-repeat no-repeat
+      background-position -5% center!important
+      position absolute
+      left 50%
+      transform translateX(-50%)
+      right 0
+      top 0
+      bottom 0
+      +to-width(850px)
+        background-position -25% center!important
+      img
+        margin-top 480px
+        transform translateX(-40%)
+        +to-width(1200px)
+          max-width 700px
+          margin-top 600px
+        +to-width(992px)
+          max-width 620px
+        +to-width(850px)
+          display none
+
+    &-image
+      display block
+      margin 0 auto
+
+
+
+    .welcome-start
+        position absolute
+        width 100%
+        bottom 240px
+        display flex
+        flex-direction column
+        left 0
+        right 0
+        +to-width(1200px)
+          bottom 40px
+        +to-width(850px)
+          bottom -90px
+
+    &-content
+        padding-top 380px
+        padding-bottom 420px
+        padding-right 0px
+        width 100%
+        display flex
+        flex-direction column
+        align-items flex-end
+        +to-width(1200px)
+          padding-top 400px
+          padding-bottom 240px
+        +to-width(1100px)
+          padding-right 40px
+        +to-width(992px)
+          padding-left 40px
+        +to-width(850px)
+          display flex
+          flex-direction column
+          align-items center
+          width 100%
+          padding-left 0
+          padding-right 0
+          padding-bottom 40px
+        +to-width(520px)
+          padding-bottom 0
+
+    &__wrap
+        display flex
+        +to-width(1600px)
+          margin-bottom -30px
+
+    &__title
+        color #930110
+        font-family Road
+        font-weight 900
+        margin-left -100px
+        padding-bottom 20px
+        +to-width(1300px)
+          margin-left 0px
+        +to-width(1200px)
+          margin-left -60px
+        +to-width(992px)
+          margin-left 0px
+
+
+    &__text
+        font-size 24px
+        color black
+        font-weight 400
+        font-family October
+        padding-bottom 30px
+        +to-width(992px)
+          font-size 22px
+        +to-width(520px)
+          font-size 18px
+
+    &-list
+        padding-bottom 45px
+        &__item
+            margin-top 20px
+            font-weight 400
+            font-size 24px
+            color black
+            position relative
+            padding-left 45px
+            +to-width(992px)
+              font-size 22px
+            +to-width(520px)
+              font-size 18px
+
+            &:before
+                content '01'
+                color #b30018
+                font-family Road
+                font-weight 900
+                position absolute
+                left 0
+                bottom -2px
+
+            &:nth-child(2)
+                &:before
+                    content '02'
+
+            &:nth-child(3)
+                &:before
+                    content '03'
+
+            &:nth-child(4)
+                &:before
+                    content '04'
+
+            &:nth-child(5)
+                &:before
+                    content '05'
+
+            &:nth-child(6)
+                &:before
+                    content '06'
+
+            &:nth-child(7)
+                &:before
+                    content '07'
+
+            &:nth-child(8)
+                &:before
+                    content '08'
+
+            &:first-child
+                margin-top 0

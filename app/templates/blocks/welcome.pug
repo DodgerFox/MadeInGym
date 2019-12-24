@@ -1,0 +1,30 @@
+section.welcome
+  .section-container.welcome-container
+    //- svg.image(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1192.4")
+    //-   defs
+    //-     path(id="a" d="M0 0h1920v715l-960 361.7L0 715V0zm0 835l960 356.7L1920 835v-98.3l-960 361.7L0 736.7V835z")
+    //-   clipPath(id="b")
+    //-     use(xlink:href="#a" overflow="visible")
+    //-   image(width="1920" height="1195" xlink:href="assets/images/main_img.jpg" overflow="visible" clip-path="url(#b)")
+    //- .svg-wrap
+  .wrap.welcome__wrap
+    img(src="assets/images/svg/welcome-label.svg").welcome__label
+    img(src="assets/images/svg/welcome-label-mobile.svg").welcome__label_mobile
+    p.welcome__text Вступите в новый фитнес-клуб до открытия — получите скидку на годовой абонемент.
+    a(href="#" data-fancybox data-modal="true" data-src="#popup").simple-button Присоединиться
+    a(href="#about" data-offset= "400").welcome-start
+      p start
+      .welcome-start-lines
+        .welcome-start-lines__item
+          .welcome-start-lines__line
+          .welcome-start-lines__line
+        .welcome-start-lines__item
+          .welcome-start-lines__line
+          .welcome-start-lines__line
+        .welcome-start-lines__item
+          .welcome-start-lines__line
+          .welcome-start-lines__line
+      //- .welcome-lang
+      //-   a(href="#").welcome-lang__item FB
+      //-   a(href="#").welcome-lang__item IN
+      //-   a(href="#").welcome-lang__item VK

@@ -1,0 +1,263 @@
+body
+	position relative
+	height 100vh
+	min-width 320px
+	min-height 400px
+	width 100%
+	color #8a8ea7
+	transition 0.5s all
+	background-color #ffffff
+
+
+html
+	font-family October, sans-serif
+	font-weight bold
+	font-size 62.5%
+	line-height 1.4
+	letter-spacing 0
+	min-width 320px
+	margin-left auto
+	margin-right auto
+
+
+.section
+	font-size 1.6rem
+	padding-top 330px
+	position relative
+	background-repeat no-repeat
+	+to-width(992px)
+		padding-top 250px
+	+to-width(640px)
+		padding-top 180px
+
+
+.wrap
+	position relative
+	padding 0 20px
+	width 100%
+	margin-left auto
+	margin-right auto
+	max-width 1400px
+
+
+.main
+	display flex
+	flex-direction column
+	min-height 100vh
+	position relative
+	z-index 2
+
+.simple-button
+	padding 20px 40px
+	background-color #ffffff
+	border 1px solid #ffffff
+	color #010000
+	font-size 14px
+	font-weight 700
+	font-family Road
+	margin-top 25px
+	transition 0.3s all
+	&:hover
+		background transparent
+		color white
+
+.text-bold
+	font-weight 700!important
+
+.section-title
+	font-size 145px
+	color #000000
+	font-family Road
+	font-weight 700
+	+to-width(1300px)
+		font-size 110px
+	+to-width(850px)
+		font-size 76px
+	+to-width(520px)
+		font-size 56px
+	+to-width(520px)
+		font-size 42px
+
+p
+	color #000000
+	font-size 16px
+	font-family October
+	font-weight 400
+	line-height 24px
+
+.more
+	position relative
+
+
+
+	&__title
+		color #FFFFFF
+		font-size 30px
+		font-weight 700
+		font-family Road
+		line-height 32.76px
+		padding-bottom 45px
+
+	&-body
+		display flex
+		justify-content center
+		+to-width(900px)
+			flex-direction column
+
+	&-item
+		width 33.333%
+		border-right 1px solid white
+		padding-left 25px
+		padding-right 50px
+		padding-top 6px
+		padding-bottom 10px
+		&:last-child
+			border-right none
+			padding-right 0
+		&:first-child
+			padding-left 0
+
+		+to-width(1200px)
+			width 100%
+		+to-width(900px)
+			padding 0
+			padding-bottom 30px
+			border none!important
+
+
+		&__number
+			color white
+			font-size 24px
+			font-family Road
+			font-weight 700
+			padding-bottom: 25px
+			min-width 32px
+
+		&__text
+			font-size 18px
+			line-height 24px
+			font-weight 300
+			font-family Road
+			color white
+
+		&__title
+			font-size 24px
+			font-family Road
+			font-weight 400
+			padding-bottom 20px
+			color white
+
+		&__wrap
+			padding-left 25px
+
+.words
+		position fixed
+		right 30px
+		top 120px!important
+		bottom 0
+		margin auto 0
+		max-height 700px
+		overflow hidden
+		transition 0.3s color
+		pointer-events none
+		z-index 10
+		+to-width(1600px)
+			right 0!important
+		+to-width(1023px)
+			display none!important
+
+		.midnightInner
+			position relative!important
+
+		&__wrap
+				height 100%
+				min-height 700px
+				width 130px
+				padding 52px 0
+				display flex
+				flex-direction column
+				justify-content space-between
+				transition 0.3s color
+				float right
+
+		&__item
+				transform rotate(90deg)
+				position relative
+				font-family Road
+				font-size 18px
+				transition 0.3s color
+				color black
+				margin 0 5px
+
+		.midnightHeader.white
+				.words__item
+						color white
+
+		&.right
+				right -80px
+
+.nav
+		&-close
+			position fixed
+			top 75px
+			right 30px
+			+to-width(640px)
+				right 20px
+			.header-gamburger__item
+				background-color white
+				&:last-child
+					opacity 0
+				&:first-child
+					transform rotate(45deg)
+					top 6px
+					left 0
+				&:nth-child(2)
+					transform rotate(-45deg)
+					top 6px
+					left 0
+
+input#check
+	position absolute
+	opacity 0
+
+	&:checked + label svg path
+		stroke-dashoffset 0
+
+	&:focus + label
+		transform scale(1.03)
+
+
+#check + label
+	display: block
+	border: 1px solid #fff
+	width var(--d)
+	height var(--d)
+	border-radius 0px
+	cursor pointer
+	transition all .2s ease
+
+	&:active
+		transform scale(1.05)
+		border-radius 3px
+
+	svg
+		pointer-events none
+		path
+			fill none
+			stroke #fff
+			stroke-width 4px
+			stroke-linecap round
+			stroke-linejoin round
+			stroke-dasharray 100
+			stroke-dashoffset 101
+			transition all 350ms cubic-bezier(1,0,.37,.91)
+
+.statistic__wrap
+	z-index 3
+
+.words-point
+	position absolute
+	right 0
+	left 0
+	bottom 0
+	top 290px

@@ -1,0 +1,96 @@
+.join
+    background-image url('../images/join-bg.png')
+    background-size contain
+    background-position center 480px
+    background-repeat no-repeat
+    padding-top 1000px
+    padding-bottom 70px
+    margin-top -750px
+    position relative
+    +to-width(1200px)
+      padding-top 900px
+      background-position center 400px
+    +to-width(1024px)
+      padding-top 800px
+      background-position center 420px
+    +to-width(700px)
+      background-size 120%
+      background-position center 460px
+    +to-width(560px)
+      padding-top 700px
+      padding-bottom 20px
+      background-position center 450px
+
+    .words-point
+      top 75px
+
+    &__wrap
+        padding-bottom 290px
+        +to-width(940px)
+          padding-bottom 60px
+        +to-width(700px)
+          padding-left 0
+          padding-right 0
+
+    &-body
+        width 100%
+        max-width 560px
+        margin-left 240px
+        position relative
+        +to-width(1300px)
+          margin-left 180px
+          max-width 450px
+        +to-width(1024px)
+          margin-left 100px
+        +to-width(700px)
+          margin-left auto
+          margin-right auto
+        +to-width(560px)
+          max-width 400px
+          padding 0 20px
+
+    &-title
+        color #b50c0c
+        background-clip text
+        font-family Road
+        font-size 119px
+        font-weight 700
+        line-height 82.27px
+        text-align center
+        +to-width(1300px)
+          font-size 80px
+          line-height 65px
+        +to-width(560px)
+          font-size 60px
+          line-height 55px
+        +to-width(560px)
+          font-size 46px
+          line-height 40px
+
+    &-button
+        margin-top 50px
+        width 100%
+        border 1px solid #060606
+        color #010101
+        font-family Road
+        font-size 17px
+        font-weight 700
+        padding 15px 0
+        text-align center
+        display block
+        transition 0.3s all
+        &:hover
+          background-color #000000
+          color white
+        +to-width(1300px)
+          margin-top 25px
+
+    &-image
+        position absolute
+        bottom 0px
+        right 0
+        +to-width(1300px)
+          max-width 900px
+
+        +to-width(940px)
+          display none

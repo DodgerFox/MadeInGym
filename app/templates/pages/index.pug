@@ -1,0 +1,30 @@
+extends ../layouts/default
+
+block head
+
+block content
+	include ../blocks/header
+	main.main
+		include ../blocks/welcome
+		include ../blocks/about
+		include ../blocks/gallery
+		include ../blocks/statistic
+		include ../blocks/halls
+		include ../blocks/program
+		include ../blocks/club
+		include ../blocks/contacts
+		include ../blocks/join
+	include ../blocks/popup
+	.words
+		.words__wrap
+			.words__item Made in gym
+			.words__item.words-number 02/08
+	include ../blocks/footer
+
+	+script('common.min')
+	script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNIxXO_SrSX_b5mDkAa-nep-O7AuFn1WQ&callback=initMap" async defer)
+	+script('libs/fancybox-master/dist/jquery.fancybox.min')
+	+script('selectize')
+	+script('validate')
+	+script('main')
+	+script('map')

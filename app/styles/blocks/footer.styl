@@ -1,0 +1,53 @@
+.footer
+    background-color #000000
+    padding-top 30px
+    padding-bottom 25px
+    width 100%
+    &__wrap
+        display flex
+        justify-content space-between
+
+    &-main
+        display flex
+        align-items center
+
+    &-logo
+        margin-right 95px
+        img
+          max-width 200px
+          width 100%
+        +to-width(800px)
+          margin-right 30px
+          img
+            max-width 150px
+        +to-width(420px)
+          img
+            max-width 120px
+
+    &-copyright
+        color #ffffff
+        font-family October
+        font-size 14px
+        font-weight 400
+        line-height 18px
+        letter-spacing 0.07px
+        +to-width(800px)
+          font-size 12px
+        +to-width(560px)
+          display none
+
+    &-autor
+        display flex
+        align-items center
+
+        &__text
+            color #ffffff
+            margin-right 7px
+            font-size 14px
+            letter-spacing 0.07px
+            line-height 16px
+            font-family October
+            +to-width(800px)
+              font-size 12px
+            +to-width(420px)
+              display none

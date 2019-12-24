@@ -1,0 +1,264 @@
+.halls
+    // background-image url('../images/halls-bg.png')
+    position relative
+    z-index 12
+    margin-top -300px
+    overflow hidden
+    padding-top 50px
+    padding-bottom 350px
+    padding-bottom 500px
+    +to-width(850px)
+      padding-top 430px
+      padding-bottom 230px
+    +to-width(520px)
+      padding-top 330px
+      padding-bottom 200px
+    &-container
+      background-size 200%
+      background-position bottom center
+      background-repeat no-repeat
+      background-color white
+      overflow hidden
+      position absolute
+      left 50%
+      transform translateX(-50%)
+      top 0
+      right 0
+      bottom 0
+      +to-width(1400px)
+        background-size 300%
+      +to-width(1200px)
+        padding-bottom 200px
+      +to-width(850px)
+        background-size 500%
+
+      &:before
+        content ''
+        position absolute
+        left 0
+        width 100%
+        top 0
+        bottom 0
+        background-image url('../images/halls-bg-lines.png')
+        background-position center 170%
+        background-repeat no-repeat
+
+    &-item
+      height 515px
+      background-color #333
+      width 100%
+      position relative
+      min-width 920px
+      +to-width(992px)
+        min-width initial
+      +to-width(700px)
+        height 400px
+      +to-width(470px)
+        height 250px
+
+    &-words
+        right -80px
+
+    .words-point
+        top -45px
+
+    .welcome-start
+        margin-top 140px
+        +to-width(850px)
+          margin-top 100px
+
+    &__title
+        text-align center
+        padding-bottom 70px
+        +to-width(850px)
+          padding-bottom 30px
+
+    &__image
+      position absolute
+      left -800px
+      bottom 600px
+      width auto
+      +to-width(1300px)
+        max-width initial
+        left -1010px
+        bottom 260px
+      +to-width(560px)
+        max-width initial
+        min-width 140%
+        width 140%
+
+    &-slider
+      max-width 920px
+      min-width 920px
+      width 100%
+      background-color white
+      overflow hidden
+      +to-width(992px)
+        min-width initial
+
+
+
+    &-body
+      display flex
+      align-items center
+      justify-content space-between
+      +to-width(1300px)
+        flex-direction column
+      +to-width(850px)
+        margin-left -20px
+        margin-right -20px
+        width auto
+
+
+    &-slides
+      position relative
+      width 100%
+      min-height 515px
+      +to-width(700px)
+        min-height 400px
+      +to-width(470px)
+        min-height 250px
+      &__item
+        height 515px
+        width 100%
+        background #333
+        background-position center
+        background-size cover
+        +to-width(700px)
+          height 400px
+        +to-width(470px)
+          height 250px
+
+    &-tabs
+      display flex
+      justify-content space-between
+
+      &__item
+        border 1px solid black
+        border-right none
+        width 25%
+        padding 20px 0
+        text-align center
+        font-size 17px
+        color #000000
+        font-family Road
+        font-weight 400
+        cursor pointer
+        background white
+        transition 0.3s all
+        &.disabled
+          pointer-events none
+        &:hover
+          background black
+          a
+            color white
+        &.active
+          background black
+          a
+            color white
+        &:last-child
+          border-right 1px solid black
+
+        +to-width(700px)
+          font-size 14px
+        +to-width(520px)
+          font-size 10px
+
+        a
+          pointer-events none
+          color #000000
+
+
+    &-content
+      max-width 440px
+      padding-right 50px
+      transition 0.3s all
+      transform translateX(-500px)
+      opacity 0
+      +to-width(1300px)
+        display flex
+        align-items center
+        flex-direction column
+        padding-bottom 40px
+        padding-right 0px
+      +to-width(850px)
+        padding-left 20px
+        padding-right 20px
+
+      &.active
+        transform translateX(0px)
+        opacity 1
+
+      &__title
+        color #000000
+        font-family Road
+        font-size 52px
+        font-weight 700
+        line-height 51.43px
+        padding-bottom 20px
+        +to-width(1300px)
+          text-align center
+          padding-bottom 10px
+        +to-width(850px)
+          font-size 50px
+        +to-width(520px)
+          font-size 28px
+          line-height 32px
+
+      &__text
+        +to-width(1300px)
+          text-align center
+          max-width 700px
+
+    .slick-arrow
+      top 0
+      height 95%
+      position absolute
+      width 16px
+      background-color transparent
+      border none
+      color transparent
+      background-repeat no-repeat
+      background-image url('../images/svg/slider-arrow.svg')
+      background-position center
+      z-index 10
+
+    .slick-prev
+      left 20px
+    .slick-next
+      right 20px
+      transform rotate(180deg)
+    &-nav
+      position absolute
+      right 0
+      top 0
+      left 0
+      bottom 0
+      display flex
+      justify-content space-between
+      align-items center
+      pointer-events none
+      padding 0 20px
+      &__item
+        pointer-events all
+        cursor pointer
+        transition 0.3s all
+        padding-right 20px
+        &:hover
+          transform translateX(-10px)
+        &:last-child
+          transform rotate(180deg)
+          &:hover
+            transform rotate(180deg) translateX(-10px)
+
+    &-counter
+      position absolute
+      left 0
+      right 0
+      bottom 30px
+      display flex
+      justify-content center
+      p
+        font-size 44px
+        color #ffffff
+        font-family Road

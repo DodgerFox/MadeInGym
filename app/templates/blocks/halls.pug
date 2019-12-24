@@ -1,0 +1,87 @@
+section.halls#halls
+  //-img(src="assets/images/halls-bg-line.png").halls__image
+  .section-container.halls-container
+  .wrap.halls__wrap
+
+    h2.section-title.halls__title Залы
+    .halls-body
+      .halls-content(style="display:none;")
+        .halls-content__title Тренажерный зал
+        p.halls-content__text Зал оборудован лучшей линейкой  тренажёров  от мировых лидеров в области фитнеса  Life Fitness и Hammer Strength.
+      .halls-content(style="display:none;")
+        .halls-content__title Большой зал групповых программ
+        p.halls-content__text В зале проходят функциональные и силовые тренировки, авторские программы. 
+      .halls-content.active
+        .halls-content__title body & mind
+        p.halls-content__text Специально оборудованная зона для занятий йогой, пилатес, йога в гамаках. Тренировки помогают  улучшить гибкость, растяжку, а также справиться со стрессом и расслабиться.
+      .halls-content(style="display:none;")
+        .halls-content__title Единоборства
+        p.halls-content__text Зона оборудована рингом и мешками для проведения ударных тренировок.
+      .halls-slider
+        ul.halls-tabs
+          li.halls-tabs__item
+            a(href="#tab-1") Тренажерный
+          li.halls-tabs__item
+            a(href="#tab-2") Групповой
+          li.halls-tabs__item.active
+            a(href="#tab-3") Body & mind
+          li.halls-tabs__item
+            a(href="#tab-4") Единоборства
+        .halls-slides#slider-container
+          .halls-item#tab-1
+            .halls-slides__wrap
+              .halls-slides__item(style="background-image:url('assets/images/38.jpg');")
+              .halls-slides__item(style="background-image:url('assets/images/20.jpg');")
+            //- .halls-nav
+            //-   .halls-nav__item.halls-nav__item_left
+            //-     img(src="assets/images/svg/slider-arrow.svg")
+            //-   .halls-nav__item.halls-nav__item_right
+            //-     img(src="assets/images/svg/slider-arrow.svg")
+            .halls-counter
+              p 01 / 03
+          .halls-item(style="display: none;")#tab-2
+            .halls-slides__wrap
+              .halls-slides__item(style="background-image:url('assets/images/40.jpg');")
+              .halls-slides__item(style="background-image:url('assets/images/20.jpg');")
+            //- .halls-nav
+            //-   .halls-nav__item.halls-nav__item_left
+            //-     img(src="assets/images/svg/slider-arrow.svg")
+            //-   .halls-nav__item.halls-nav__item_right
+            //-     img(src="assets/images/svg/slider-arrow.svg")
+            .halls-counter
+              p 01 / 03
+          .halls-item(style="display: none;")#tab-3.active
+            .halls-slides__wrap
+              .halls-slides__item(style="background-image:url('assets/images/20.jpg');")
+              .halls-slides__item(style="background-image:url('assets/images/20.jpg');")
+            //- .halls-nav
+            //-   .halls-nav__item.halls-nav__item_left
+            //-     img(src="assets/images/svg/slider-arrow.svg")
+            //-   .halls-nav__item.halls-nav__item_right
+            //-     img(src="assets/images/svg/slider-arrow.svg")
+            .halls-counter
+              p 01 / 03
+          .halls-item(style="display:none;")#tab-4
+            .halls-slides__wrap
+              .halls-slides__item(style="background-image:url('assets/images/22.jpg');")
+              .halls-slides__item(style="background-image:url('assets/images/20.jpg');")
+            //- .halls-nav
+            //-   .halls-nav__item.halls-nav__item_left
+            //-     img(src="assets/images/svg/slider-arrow.svg")
+            //-   .halls-nav__item.halls-nav__item_right
+            //-     img(src="assets/images/svg/slider-arrow.svg")
+            .halls-counter
+              p 01 / 03
+
+    
+    a(href="#program" data-offset="500").welcome-start.black
+      .welcome-start-lines
+        .welcome-start-lines__item
+          .welcome-start-lines__line
+          .welcome-start-lines__line
+        .welcome-start-lines__item
+          .welcome-start-lines__line
+          .welcome-start-lines__line
+        .welcome-start-lines__item
+          .welcome-start-lines__line
+          .welcome-start-lines__line

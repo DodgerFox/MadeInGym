@@ -1,0 +1,343 @@
+.statistic
+  margin-top -700px
+  padding-top 850px
+  padding-top 950px
+  padding-bottom 400px
+  padding-bottom 600px
+  // background-image url('../images/statistic-bg.png')
+  background-position bottom center
+  background-repeat no-repeat
+  background-size 200%
+  overflow hidden
+  position relative
+  z-index 14
+  +to-width(1400px)
+    background-size 300%
+  +to-width(1200px)
+    padding-bottom 200px
+    padding-top 800px
+  +to-width(850px)
+    background-size 500%
+  +to-width(500px)
+    background-size 690%
+  &:before
+    content ''
+    position absolute
+    left 0
+    right 0
+    bottom 500px
+    top 0
+    background-image linear-gradient(top, rgba(5,4,5,0) 0%,rgba(5,4,5,0) 55%,rgba(5,4,5,1) 85%)
+    background-position bottom center
+    background-repeat no-repeat
+    background-size cover
+    z-index 4
+    +to-width(1300px)
+        background-image linear-gradient(top, rgba(5,4,5,0) 0%,rgba(5,4,5,0) 56%,rgba(5,4,5,1) 81%)
+    +to-width(1100px)
+        background-image linear-gradient(top, rgba(5,4,5,0) 0%,rgba(5,4,5,0) 55%,rgba(5,4,5,1) 80%)
+    +to-width(750px)
+        background-image linear-gradient(top, rgba(5,4,5,0) 0%,rgba(5,4,5,0) 50%,rgba(5,4,5,1) 73%)
+    +to-width(580px)
+        background-image linear-gradient(top, rgba(5,4,5,0) 0%,rgba(5,4,5,0) 45%,rgba(5,4,5,1) 70%)
+
+  &:after
+    content ''
+    position absolute
+    left 0
+    right 0
+    bottom 500px
+    top 0
+    background-image radial-gradient(center, ellipse cover, rgba(196,0,19,1) 0%,rgba(196,0,19,0.58) 30%,rgba(196,0,19,0) 100%)
+    background-position bottom center
+    background-size cover
+    z-index 2
+    +to-width(640px)
+      margin-top 350px
+    +to-width(470px)
+      bottom 500px
+      margin-top 0
+
+  .words-point
+    bottom 380px
+
+  &-container
+    position absolute
+    left 50%
+    transform translateX(-50%)
+    top 0
+    right 0
+    bottom 0
+    background rgba(5,4,5,1)
+
+  &__wrap
+    z-index 4
+
+
+  &-words
+      .words__wrap
+          height 750px
+          color white
+
+  &-wrap
+    z-index 3
+
+  .more
+    margin-top 260px
+    z-index 5
+    +to-width(1200px)
+      margin-top 150px
+    +to-width(640px)
+      margin-top 450px
+    +to-width(530px)
+      margin-top 420px
+    +to-width(470px)
+      margin-top 100px
+    &-item
+      +to-width(900px)
+        display flex
+        padding-left 60px
+      +to-width(700px)
+        padding-left 0px
+
+      &__text
+        +to-width(900px)
+          margin-left 15px
+
+      &__number
+        +to-width(900px)
+          padding-bottom 0
+
+  .welcome-start
+    position relative
+    z-index 4
+    margin-top 155px
+    +to-width(470px)
+      margin-top 100px
+
+  &-image
+    width 100%
+    margin 0 auto
+    margin-top 140px
+    &__wrap
+      position absolute
+      top 0
+      right 0
+      left 0
+      bottom 0
+      z-index 3
+      +to-width(640px)
+        top 280px
+      +to-width(470px)
+        display none
+
+
+
+  &__wrap
+    width 100%
+
+  &-body
+    display flex
+    position relative
+    z-index 5
+    +to-width(640px)
+      flex-wrap wrap
+
+  &-left
+    width 50%
+    display flex
+    flex-wrap wrap
+    padding-right 100px
+    +to-width(900px)
+      padding-right 70px
+    +to-width(640px)
+      width 100%
+      padding 0
+      flex-wrap nowrap
+    +to-width(470px)
+      flex-wrap wrap
+      justify-content center
+
+  &-right
+    width 50%
+    display flex
+    flex-wrap wrap
+    justify-content flex-end
+    padding-left 100px
+    +to-width(900px)
+      padding-left 70px
+    +to-width(640px)
+      width 100%
+      padding 0
+      flex-wrap nowrap
+    +to-width(470px)
+      flex-wrap wrap
+      justify-content center
+
+  &-item
+    width 50%
+    padding-bottom 50px
+    display flex
+    flex-direction column
+    align-items center
+    +to-width(900px)
+      padding-bottom 20px
+    +to-width(470px)
+      padding 5px
+
+
+    &__title
+      color #ffffff
+      font-size 100px
+      padding-bottom 20px
+      font-family Road
+      font-weight 700
+      +to-width(1200px)
+        font-size 80px
+      +to-width(900px)
+        font-size 60px
+        padding-bottom 5px
+      +to-width(470px)
+        font-size 46px
+
+      span
+        font-size 26px
+        sup
+          font-size 18px
+
+    &__text
+      font-size 18px
+      color #ffffff
+      font-weight 300
+      font-family Road
+      text-align center
+      max-width 240px
+      +to-width(900px)
+        font-size 14px
+        line-height 18px
+
+  &-form
+    display flex
+    justify-content center
+    align-items flex-end
+    margin-top 45px
+    position relative
+    z-index 5
+    +to-width(992px)
+      flex-wrap wrap
+
+
+    &-agreement
+      display flex
+      +to-width(992px)
+        margin-top 30px
+        justify-content center
+
+    &-checkbox
+      margin-right 12px
+
+    &__input
+      width 50%
+      max-width 273px
+      height 48px
+      border 1px solid #ffffff
+      background transparent
+      text-align center
+      font-size 16px
+      color #ffffff
+      font-family Road
+      font-weight 300
+      padding 0 15px
+      +placeholder()
+        color white
+      +to-width(900px)
+        width 33.333%
+      +to-width(600px)
+        width 100%
+        max-width 100%
+        text-align left
+
+    &__select
+      width 50%
+      max-width 273px
+      height 48px
+      border 1px solid #ffffff
+      background transparent
+      text-align center
+      font-size 16px
+      color #ffffff
+      font-family Road
+      font-weight 300
+      z-index 2
+      +placeholder()
+        color white
+      +to-width(900px)
+        width 33.333%
+      +to-width(600px)
+        width 100%
+        max-width 100%
+        text-align left
+
+    .selectize-input
+      height 100%
+      padding 0 15px
+      display flex
+      align-items center
+      input
+        background transparent
+        border none
+
+    .selectize-dropdown
+      margin-left -1px
+      margin-right -1px
+      height auto
+      .option
+        height 48px
+        display flex
+        align-items center
+        padding 0 15px
+        border-bottom 1px solid white
+        background black
+        &:last-child
+          border-bottom 0
+
+    &__button
+      width 100%
+      height 48px
+      border 1px solid #ffffff
+      background-color #ffffff
+      text-align center
+      font-size 16px
+      color #000000
+      font-family Road
+      font-weight 300
+      margin-top 20px
+      transition 0.3s all
+      +placeholder()
+        color white
+      &:hover
+        color white
+        background-color transparent
+
+    &__wrap
+      padding-left 30px
+      width 50%
+      position relative
+      z-index 1
+      +to-width(900px)
+        width 100%
+        max-width 400px
+        padding 0
+
+    &__text
+      font-family October
+      font-size 16px
+      font-weight 300
+      line-height 18px
+      color white
+      a
+        color white
+        border-bottom 1px solid white
+        t()
+        &:hover
+          border-bottom 1px solid transparent

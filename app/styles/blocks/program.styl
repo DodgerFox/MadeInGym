@@ -1,0 +1,191 @@
+.program
+    margin-top -630px
+    position relative
+    z-index 10
+    overflow hidden
+    padding-top 780px
+    padding-top 600px
+    padding-bottom 350px
+    padding-bottom 550px
+    // background-image url('../images/program-bg-2.png')
+    // background-size 200%
+    +to-width(1400px)
+      background-size 300%
+    +to-width(1200px)
+      padding-bottom 200px
+    +to-width(850px)
+      padding-top 750px
+      background-size 500%
+    +to-width(600px)
+      background-size cover
+    +to-width(520px)
+      padding-top 680px
+    &-container
+      background-image linear-gradient(-202deg, #b71112 0%, #b71112 37%, #000000 100%)
+      background-position bottom center
+      background-repeat no-repeat
+
+      &:before
+        content ''
+        position absolute
+        left 0
+        width 100%
+        top 0
+        bottom 0
+        background-image url('../images/program-back.png')
+        background-position center -77%
+        background-repeat no-repeat
+        +to-width(1200px)
+          background-position center -170%
+
+    .words-point
+      bottom 380px
+      top 250px
+
+    &-container
+      position absolute
+      left 50%
+      transform translateX(-50%)
+      top 0
+      right 0
+      bottom 0
+
+
+    &__title
+        text-align center
+        padding-bottom 70px
+        +to-width(1300px)
+          padding-bottom 0
+
+    &-image
+      min-width 500px
+      height 670px
+      float left
+      background-size cover
+      background-position top center
+      background-repeat no-repeat
+      +to-width(850px)
+        max-width 310px
+      +to-width(400px)
+        max-width 260px
+
+      &__wrap
+        float left
+        img
+          min-height 400px
+        +to-width(700px)
+          width 100%
+          img
+            margin 0 auto
+            display block
+
+    &-nav
+        padding-top 70px
+        +to-width(1300px)
+          display flex
+          justify-content space-between
+          flex-wrap wrap
+          padding-top 30px
+          padding-bottom 50px
+          top 0
+          left 0
+          right 0
+        +to-width(1200px)
+          justify-content center
+        &__item
+            color #AB191A
+            font-size 45px
+            padding-bottom 10px
+            font-family Road
+            letter-spacing 2px
+            text-shadow -0 -1px 0 #FFFFFF, 0 -1px 0 #FFFFFF, -0 1px 0 #FFFFFF, 0 1px 0 #FFFFFF, -1px -0 0 #FFFFFF, 1px -0 0 #FFFFFF, -1px 0 0 #FFFFFF, 1px 0 0 #FFFFFF, -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF, -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF
+            transition 0.3s all
+            position relative
+            cursor pointer
+            +to-width(1300px)
+              font-size 20px
+              margin-right 20px
+              text-shadow none
+              color white
+            +to-width(1200px)
+              font-size 18px
+            &:hover
+                text-shadow none
+                a
+                  color white
+            &.active
+                text-shadow none
+                a
+                  color white
+                  +to-width(1300px)
+                    color black
+                &:after
+                    content ''
+                    border 8px solid transparent
+                    border-left 13px solid rgba(255, 255, 255, 1)
+                    display block
+                    width 0
+                    height 0
+                    position absolute
+                    left -30px
+                    top 15px
+                    +to-width(1300px)
+                      display none
+            a
+              pointer-events none
+              color #AB191A
+              +to-width(1300px)
+                color white
+
+    &-body
+        display flex
+        justify-content space-between
+        position relative
+        +to-width(1300px)
+          padding-top 40px
+          justify-content center
+          flex-direction column
+          align-items center
+
+    &-content
+        padding-top 76px
+        max-width 320px
+        float left
+        +to-width(700px)
+          max-width 100%
+          padding-bottom 40px
+
+        &__title
+            color white
+            font-size 30px
+            font-family Road
+            font-weight 400
+            line-height 32.76px
+            padding-bottom 25px
+            +to-width(700px)
+              text-align center
+            +to-width(640px)
+              padding-bottom 10px
+              font-size 22px
+              line-height 26.76px
+
+        &__text
+          color white
+
+    &-more
+      margin-top 100px
+      .more-item
+        display flex
+
+      .more__title
+        text-align center
+        padding-bottom 60px
+
+
+      .more-item__text
+        font-family October
+        font-size 16px
+        line-height 24px
+
+    .welcome-start
+      margin-top 100px

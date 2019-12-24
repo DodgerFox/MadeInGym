@@ -1,0 +1,225 @@
+.welcome
+    z-index 20
+    overflow hidden
+    display flex
+    justify-content center
+    min-height 810px
+    padding-bottom 0px
+    &-container
+      height 130vh
+      min-height 760px
+      padding-top 80px
+      background-image url('../images/welcome-bg-2.jpg')
+      background-size cover
+      background-position bottom center
+      padding-bottom 200px
+      // transform translateX(-60px)
+      +to-width(420px)
+        height 100vh
+        min-height 810px
+
+    &__wrap
+        height 100%
+        display flex
+        flex-direction column
+        align-items center
+        justify-content center
+
+    &__label
+      max-width 1000px
+      +to-width(1300px)
+        max-width 900px
+      +to-width(1024px)
+        max-width 740px
+      +to-width(900px)
+        max-width 600px
+      +to-width(700px)
+        max-width 480px
+      +to-width(600px)
+        display none
+
+
+      &_mobile
+        display none
+        +to-width(600px)
+          display block
+          max-width 100%
+        +to-width(420px)
+          min-width 370px
+
+    &__text
+        font-size 18px
+        color #ffffff
+        line-height 22px
+        font-weight 400
+        font-family October
+        max-width 360px
+        margin-top 40px
+        +to-width(420px)
+          font-size 16px
+          text-align center
+          margin-top 20px
+
+    &-start
+        margin-top 55px
+        display block
+        +to-width(420px)
+          display none
+
+        &.black
+          .welcome-start-lines__line
+            background-color black
+
+        p
+            font-size 16px
+            color #fefefe
+            font-weight 300
+            font-family Road
+
+        &-lines
+            margin-top 20px
+            display flex
+            flex-direction column
+            align-items center
+            cursor pointer
+            transition 0.3s all
+            &:hover
+                transform translateY(5px)
+            &__item
+                position relative
+                width 44px
+                height 9px
+                margin-top 0px
+                animation-name button-start-one
+                animation-duration 1.5s
+                animation-direction alternate
+                animation-timing-function ease-in-out
+                animation-iteration-count infinite
+                animation-delay 0s
+                &:nth-child(2)
+                    .welcome-start-lines__line
+                        animation-name button-start-two
+                        animation-duration 1.5s
+                        animation-direction alternate
+                        animation-iteration-count infinite
+                        animation-delay 0.2s
+                &:nth-child(3)
+                    .welcome-start-lines__line
+                        animation-name button-start-tree
+                        animation-duration 1.5s
+                        animation-direction alternate
+                        animation-iteration-count infinite
+                        animation-delay 0.4s
+
+            &__line
+                height 1px
+                width 23px
+                background-color white
+                transform rotate(20deg)
+                position absolute
+                left 0
+                top 0
+                &:last-child
+                    transform rotate(-20deg)
+                    right 0
+                    top 0
+                    left inherit
+
+@keyframes button-start-one {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes button-start-two {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes button-start-tree {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@media screen and (max-height: 700px){
+  .welcome__text{
+    margin-top: 100px;
+  }
+}
+
+_:-ms-lang(x), .welcome-container{
+  background-image: url('../images/welcome-ie.png');
+  background-size: 250%;
+}
+
+_:-ms-lang(x), .about{
+  background-image: url('../images/about-bg-2.png');
+  background-size: cover;
+  background-position: bottom center;
+  background-color: none;
+  padding-bottom: 0;
+}
+
+_:-ms-lang(x), .about-container, .gallery-container, .statistic-container, .halls-container, .club-container, .contacts-container, .program-container {
+  opacity: 0;
+  pointer-events: none;
+}
+
+_:-ms-lang(x), .gallery{
+  background-image: url('../images/gallery-bg-2.png');
+  background-size: cover;
+  background-position: bottom center;
+  background-color: none;
+}
+
+_:-ms-lang(x), .statistic{
+  background-image: url('../images/statistic-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-color: none;
+}
+_:-ms-lang(x), .halls{
+  background-image: url('../images/halls-bg-2.png');
+  background-size: 160%;
+  background-position: bottom center;
+  background-color: none;
+}
+
+_:-ms-lang(x), .program{
+  background-image: url('../images/program-bg-2.png');
+  background-size: 170%;
+  background-position: bottom center;
+  background-color: none;
+}
+
+_:-ms-lang(x), .club{
+  background-image: url('../images/club-bg.png');
+  background-size: 170%;
+  background-position: bottom center;
+  background-color: none;
+}
+
+_:-ms-lang(x), .contacts{
+  background-image: url('../images/contacts-bg-2.png');
+  background-size: 175%;
+  background-position: bottom center;
+  background-color: none;
+}

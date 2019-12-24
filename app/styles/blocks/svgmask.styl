@@ -1,0 +1,50 @@
+/*
+	1 cпособ через svg-маску.
+	Подходит только для картинки и слишком много
+	заморочек по сравнению с clip-path
+
+	Кстати, здес картинка будет обрезаться, если делать фоном и ставить cover;
+*/
+.welcome{
+	background: transparent;
+	position: relative;
+	height: auto;
+	min-height: 1px;
+}
+.welcome .image{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	z-index: 0;
+}
+.svg-wrap{
+	z-index: 10;
+	padding-top: 62.24%; /* метод от netflix */
+}
+/* чтобы padding предыдущего блока не мешал, делаем этот абсолютом */
+.welcome__wrap{
+	height: auto;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+
+/*
+	2й способ с clip-path.
+
+	больше инфы: https://css-tricks.com/clipping-masking-css/
+*/
+.section-container{
+  width: 100%;
+  min-width: 1920px;
+  margin: 0 auto;
+  background-position: center;
+	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 480px), 50% calc(100% - 120px), 0 calc(100% - 480px), 0 0,
+	100% calc(100% - 460px), 50% calc(100% - 100px), 0 calc(100% - 460px), 0 calc(100% - 360px), 50% 100%, 100% calc(100% - 360px), 100% calc(100% - 460px));
+}

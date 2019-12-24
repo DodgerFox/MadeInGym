@@ -1,0 +1,161 @@
+.gallery
+    // background-image url('../images/gallery-bg-2.png')
+    margin-top -700px
+    z-index 16
+    overflow hidden
+    position relative
+    padding-top 700px
+    padding-bottom 450px
+    +to-width(850px)
+      padding-bottom 300px
+      padding-top 850px
+    +to-width(520px)
+      padding-top 750px
+      padding-bottom 200px
+    &-container
+      background-image url('../images/gallery-lines.png')
+      background-position bottom center
+      background-size cover
+      background-repeat no-repeat
+      background-color black
+      position absolute
+      left 50%
+      transform translateX(-50%)
+      top 0
+      right 0
+      bottom 0
+      +to-width(1200px)
+        padding-bottom 200px
+        padding-top 700px
+      +to-width(420px)
+        padding-bottom 150px
+      +to-width(1400px)
+        background-size 130%
+      +to-width(1200px)
+        padding-bottom 200px
+      +to-width(850px)
+        padding-top 680px
+        background-size 180%
+      +to-width(600px)
+        background-size cover
+
+
+    &-words
+        padding-top 470px
+        .words__wrap
+            min-height 730px
+            color white
+        +to-width(990px)
+          display none
+
+    .welcome-start
+        margin-top 100px
+
+    &__title
+        color white
+        text-align center
+
+    &-slider
+        margin-top 30px
+        position relative
+
+    &-slide
+        display flex
+        justify-content center
+        padding-top 20px
+        position relative
+        +to-width(1200px)
+          padding 0 80px
+        +to-width(640px)
+          padding 0
+
+        &__container
+            width 930px
+            height 540px
+            margin 0 auto
+            background-size cover
+            background-position center
+            transition 0.4s all
+            +to-width(1200px)
+              width 100%
+            +to-width(850px)
+              height 450px
+            +to-width(850px)
+              height 380px
+            +to-width(420px)
+              height 320px
+
+        &__title
+            position absolute
+            top 0px
+            left 0
+            right 0
+            display flex
+            justify-content center
+
+            p
+                background-color white
+                max-width 260px
+                text-align center
+                padding 26px 58px
+                font-size 18px
+                color #000000
+                font-family October
+                font-weight 400
+                line-height 24px
+                +to-width(850px)
+                  padding 18px 50px
+                +to-width(520px)
+                  font-size 16px
+                +to-width(420px)
+                  font-size 14px
+                  padding 16px 30px
+
+    .slick-dots
+        display flex
+        justify-content center
+        align-items center
+        padding-top 25px
+        font-weight 300
+        li
+            margin-right 25px
+            font-size 25px
+            font-family Road
+            &.slick-active
+                font-weight 700
+                font-size 33px
+            &:last-child
+                margin-right 0
+            &:nth-child(-n+10)
+                &:before
+                    content: '0'
+                    color #ffffff
+        button
+            color #ffffff
+            background transparent
+            border none
+
+    &-nav
+        position absolute
+        left 0
+        right 0
+        top 0
+        bottom 0
+        pointer-events none
+        &__wrap
+            display flex
+            justify-content space-between
+            align-items center
+            height 100%
+
+        &__item
+            cursor pointer
+            transition 0.3s transform
+            pointer-events all
+            padding-right 20px
+            &:hover
+                transform translateX(-10px)
+            &_right
+                transform rotate(180deg)
+                &:hover
+                    transform rotate(180deg) translateX(-10px)
